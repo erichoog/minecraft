@@ -1,0 +1,8 @@
+[
+	{
+		"name": "Custom Server Name",
+		"iconUrl": "https://i.imgur.com/nhumQVP.png",
+		"address": "<Geyser Server IP - USE IP HERE>",
+		"port": 19133
+	}
+]

@@ -1,0 +1,12 @@
+Geyser-Spigot/*
+!Geyser-Spigot/config.yml
+BedrockConnect/*
+!BedrockConnect/start-server.sh
+!BedrockConnect/config.yml
+!BedrockConnect/serverlist.json
+server/*
+!server/start-server.sh
+!server/plugins/Geyser-Spigot.jar
+!server/eula.txt
+worlds/*
+!worlds/myworld

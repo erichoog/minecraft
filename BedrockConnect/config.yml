@@ -1,0 +1,5 @@
+custom_servers: serverlist.json
+port: 19132
+nodb: true
+featured_servers: false
+fetch_featured_ips: false

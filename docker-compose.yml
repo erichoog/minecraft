@@ -1,0 +1,24 @@
+services:
+  minecraft-server:
+    container_name: minecraft-server
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - 25565:25565
+      - 19133:19133/udp
+    volumes:
+      - ./server:/minecraft/server
+      - ./worlds/myworld/world:/minecraft/server/world
+      - ./worlds/myworld/world_nether:/minecraft/server/world_nether
+      - ./worlds/myworld/world_the_end:/minecraft/server/world_the_end
+      - ./Geyser-Spigot:/minecraft/server/plugins/Geyser-Spigot
+  minecraft-bedrock:
+      container_name: minecraft-bedrock
+      build: 
+        context: .
+        dockerfile: Dockerfile-bedrock
+      ports: 
+        - 19132:19132/udp
+      volumes:
+        - ./BedrockConnect:/bedrock
